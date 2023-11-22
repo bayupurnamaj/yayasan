@@ -12,7 +12,6 @@ body {
   font-family: "Noto Sans", sans-serif;
   background-image: url(image/pattern.webp);
 }
-
 .navbar .logo-text {
   font-family: "righteous", sans-serif;
   margin-left: -2rem;
@@ -36,6 +35,15 @@ body {
 }
 .mynavbar .offcanvas {
   height: 100vh;
+}
+
+.nav-btn .btn {
+  background-color: var(--satu);
+  color: var(--tiga);
+}
+.nav-btn .btn:hover {
+  background-color: var(--tiga);
+  color: var(--satu);
 }
 /* \--------------home------------- */
 .home::before {
