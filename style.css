@@ -1,0 +1,213 @@
+:root {
+  --satu: #436e4d;
+  --dua: #feab10;
+  --tiga: #f7f3e7;
+
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 /0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Noto Sans", sans-serif;
+  background-image: url(image/pattern.webp);
+}
+
+.navbar .logo-text {
+  font-family: "righteous", sans-serif;
+  margin-left: -2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  color: var(--satu);
+}
+.navbar .menu {
+  margin-left: 2rem;
+}
+.navbar .nav-link {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 3rem;
+}
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(19px);
+}
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+/* \--------------home------------- */
+.home::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(img/img1.jpg);
+  background-size: cover;
+  opacity: 60%;
+}
+.home::after {
+  content: " ";
+  position: absolute;
+  top: -200px;
+  left: -300px;
+  height: 90%;
+  width: 60%;
+  transform: rotate(20deg);
+  border-bottom-right-radius: 600px;
+  z-index: -1;
+  background-color: #fff;
+}
+.home {
+  min-height: 100vh;
+}
+.home h1 {
+  color: var(--satu);
+  margin-top: 11rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-shadow: var(--shadow);
+}
+
+.home a {
+  background-color: var(--satu);
+  color: var(--tiga);
+  transition: 0.3s;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+.home a:hover {
+  background-color: #0e1b11;
+  color: #fff;
+}
+
+/* -----------------privat--------------- */
+.privat,
+.produk {
+  padding: 10rem 0;
+}
+.privat .jdl-sm,
+.produk .jdl {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--satu);
+}
+.privat a {
+  text-decoration: none;
+  color: var(--satu);
+  font-weight: 600;
+}
+.privat .kelas {
+  color: #fff;
+}
+.privat .kelas h5 {
+  margin-top: 1rem;
+}
+.privat .kelas .card-text {
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.privat .kelas a {
+  color: #fff;
+  font-weight: 200;
+  font-size: 1rem;
+}
+.kelas .isi-collapse p {
+  color: #000;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.privat .kelas .btn {
+  color: var(--tiga);
+  background-color: var(--satu);
+  font-size: 0.8rem !important;
+}
+
+/* -----------------Produk------------------------ */
+.produk {
+  background-color: var(--tiga);
+}
+.produk .card i {
+  margin-left: 2rem;
+  color: var(--dua);
+}
+
+/* --------------------footer--------------- */
+footer {
+  padding: 2rem 0;
+  background-color: var(--satu);
+  color: var(--tiga);
+}
+footer a {
+  text-decoration: none;
+  color: var(--dua);
+}
+/* ------------------------Media Queries-----------------------------*/
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 90%;
+  }
+  .privat .kelas .card-text {
+    margin-bottom: 20rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 85%;
+  }
+
+  .offcanvas h5 {
+    margin-left: 0;
+    font-family: "righteous", sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--satu);
+  }
+  .offcanvas .offcanvas-body {
+    margin: auto;
+  }
+  .navbar .nav-btn .btn {
+    font-size: 1.3rem;
+  }
+
+  .navbar .nav-link {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+  }
+  .kelas,
+  .produk .desk {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    border: none !important;
+  }
+  .privat .kelas .card-text {
+    margin-bottom: 2rem;
+  }
+  .privat .tentang {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+/* Mobilephone */
+@media (max-width: 576px) {
+  html {
+    font-size: 80%;
+  }
+
+  .privat .kelas .card-text {
+    margin-bottom: 2rem;
+  }
+}
